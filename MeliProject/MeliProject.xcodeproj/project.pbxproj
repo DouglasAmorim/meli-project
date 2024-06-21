@@ -17,6 +17,8 @@
 		E86058632C2632500065BFBB /* MeliProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86058622C2632500065BFBB /* MeliProjectTests.swift */; };
 		E860586D2C2632500065BFBB /* MeliProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860586C2C2632500065BFBB /* MeliProjectUITests.swift */; };
 		E860586F2C2632500065BFBB /* MeliProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860586E2C2632500065BFBB /* MeliProjectUITestsLaunchTests.swift */; };
+		E8CECE302C26371F003B1E7E /* WsRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CECE2F2C26371F003B1E7E /* WsRequestInterceptor.swift */; };
+		E8CECE342C263959003B1E7E /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CECE332C263959003B1E7E /* Endpoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		E86058682C2632500065BFBB /* MeliProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeliProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E860586C2C2632500065BFBB /* MeliProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliProjectUITests.swift; sourceTree = "<group>"; };
 		E860586E2C2632500065BFBB /* MeliProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E8CECE2F2C26371F003B1E7E /* WsRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WsRequestInterceptor.swift; sourceTree = "<group>"; };
+		E8CECE332C263959003B1E7E /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		FB3AE69C7FE7A6FBCB0C0F7B /* Pods-MeliProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeliProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-MeliProjectTests/Pods-MeliProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,7 +100,6 @@
 				FB3AE69C7FE7A6FBCB0C0F7B /* Pods-MeliProjectTests.debug.xcconfig */,
 				C6E45E9C5F855DFE83456E1D /* Pods-MeliProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -174,6 +177,7 @@
 		E860587B2C2632720065BFBB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E8CECE2E2C26363F003B1E7E /* WebService */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +194,15 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E8CECE2E2C26363F003B1E7E /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				E8CECE2F2C26371F003B1E7E /* WsRequestInterceptor.swift */,
+				E8CECE332C263959003B1E7E /* Endpoints.swift */,
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +444,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E86058542C26324F0065BFBB /* ContentView.swift in Sources */,
+				E8CECE302C26371F003B1E7E /* WsRequestInterceptor.swift in Sources */,
+				E8CECE342C263959003B1E7E /* Endpoints.swift in Sources */,
 				E86058522C26324F0065BFBB /* MeliProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,6 +601,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BBBE6332A08BCCCF297224BA /* Pods-MeliProject.debug.xcconfig */;
 			buildSettings = {
+				API_BASE = "https://api.mercadolibre.com/";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -604,6 +620,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				PATCH_BASE = sites/MLA/;
 				PRODUCT_BUNDLE_IDENTIFIER = douglasAmorim.MeliProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -616,6 +633,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27895B1B763581EF7A95F669 /* Pods-MeliProject.release.xcconfig */;
 			buildSettings = {
+				API_BASE = "https://api.mercadolibre.com/";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -634,6 +652,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				PATCH_BASE = sites/MLA/;
 				PRODUCT_BUNDLE_IDENTIFIER = douglasAmorim.MeliProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
