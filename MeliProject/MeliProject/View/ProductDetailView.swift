@@ -14,10 +14,22 @@ struct ProductDetailView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 20) {
-                    
-                    AsyncImage(url: URL(string: product.thumbnail ?? ""))
-                        .scaledToFit()
-                        .frame(alignment: .center)
+                    AsyncImage(url: URL(string: product.thumbnail ?? "")) { phase in
+                        
+                        switch phase {
+                        case .success(let image):
+                            image.resizable()
+                            
+                        case .failure(_):
+                            Image(systemName: "photo")
+                                .scaledToFit()
+                            
+                        default:
+                            ProgressView()
+                        }
+                    }
+                    .scaledToFit()
+                    .frame(alignment: .center)
                     
                     VStack(alignment: .leading, spacing: 24) {
                         Text("Product: \(product.title ?? "")")
