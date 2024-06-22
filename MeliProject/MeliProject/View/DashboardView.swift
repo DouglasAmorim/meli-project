@@ -14,7 +14,7 @@ struct DashboardView: View {
         NavigationView {
             List {
                 ForEach(dashboardViewModel.products) { product in
-                    NavigationLink(destination: ContentView(), label: {
+                    NavigationLink(destination: ProductDetailView(product: product), label: {
                         ProductRowView(product: product)
                             .padding(.vertical, 4)
                     })
