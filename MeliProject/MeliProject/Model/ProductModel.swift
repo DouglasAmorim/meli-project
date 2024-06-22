@@ -13,9 +13,10 @@ class ProductModel: Codable, Equatable, Identifiable {
     var price: Int = 0
     var currency: String = ""
     var thumbnail: String = ""
+    var attributes: [ProductAttributesModel] = []
     
     private enum CodingKeys: String, CodingKey {
-        case id, title, price, thumbnail
+        case id, title, price, thumbnail, attributes
         case currency = "currency_id"
     }
     

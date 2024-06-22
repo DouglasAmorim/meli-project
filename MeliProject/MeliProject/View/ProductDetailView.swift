@@ -21,15 +21,27 @@ struct ProductDetailView: View {
                     
                     VStack(alignment: .leading, spacing: 24) {
                         Text("Product: \(product.title)")
-                            .font(.title)
+                            .font(.largeTitle)
                         
                         Text("Price: \(product.price) \(product.currency)")
-                            .font(.title2)
+                            .font(.title)
                             .multilineTextAlignment(.leading)
-                        
-                        
                     }
-                    
+                
+                    ForEach(product.attributes) { attribute in
+                        VStack(alignment: .leading, spacing: 8) {
+                            HStack {
+                                Text(attribute.name ?? " - ")
+                                    .font(.title3)
+
+                                Spacer()
+                                
+                                Text(attribute.valueName ?? " - ")
+                                    .font(.title3)
+                            }//: HStack
+
+                        }//: VStack
+                    }//: For
                 }//: VStack
                 .padding(.horizontal, 24)
             }
