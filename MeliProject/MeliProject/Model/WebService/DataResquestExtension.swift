@@ -18,6 +18,7 @@ extension DataRequest {
                 return
             }
             
+            print("DATA REQUEST - Request URL: \(dataResponse.request?.url)")
             print("DATAREQUEST - response status code \(statusCode)")
             
             switch statusCode {

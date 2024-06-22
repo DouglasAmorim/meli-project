@@ -8,16 +8,19 @@
 import Foundation
 
 class DashboardViewModel: ObservableObject {
-    private var listProductsService: ListProductsService
+    private var listProductsService: ProductsService
+    
+    var searchAttributes: ProductQueryStringModel = ProductQueryStringModel()
+    
     @Published var products: [ProductModel] = []
     @Published var error: ErrorCustom? = nil
     
-    init(listProductsService: ListProductsService) {
+    init(listProductsService: ProductsService) {
         self.listProductsService = listProductsService
     }
     
     func getListProducts() {
-        self.listProductsService.getListProducts{ result in
+        self.listProductsService.getListProducts(productQueryStringModel: self.searchAttributes) { result in
             switch result {
             case .success(let productsModel):
                 print("VIEWMODEL - DashboardViewModel - success - items: \(productsModel.count)")

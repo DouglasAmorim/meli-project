@@ -13,18 +13,18 @@ struct ProductRowView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 5) {
-                Text(product.title)
+                Text(product.title ?? "")
                     .font(.title2)
                     .fontWeight(.bold)
                 
-                Text("Preço \(String(product.price)) \(product.currency)")
+                Text("Preço \(String(product.price ?? 0)) \(product.currency ?? "")")
                     .font(.caption)
                     .foregroundColor(Color.secondary)
             }
             
             Spacer()
             
-            AsyncImage(url: URL(string: product.thumbnail))
+            AsyncImage(url: URL(string: product.thumbnail ?? ""))
                 .scaledToFit()
                 .frame(alignment: .trailing)
         }

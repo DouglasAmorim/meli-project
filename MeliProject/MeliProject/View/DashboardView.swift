@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct DashboardView: View {
-    @ObservedObject var dashboardViewModel = DashboardViewModel(listProductsService: ListProductsService())
+    @ObservedObject var dashboardViewModel = DashboardViewModel(listProductsService: ProductsService())
+    @State private var isShowingFilter: Bool = false
+    @AppStorage("selectedCategory") var selectedCategory: String = "MLA1055"
     
     var body: some View {
         NavigationView {
@@ -21,6 +23,20 @@ struct DashboardView: View {
                 }
             }
             .navigationTitle("Products")
+            .navigationBarItems(trailing:
+                                    Button(action: {
+                                        isShowingFilter = true
+                                    }) {
+                                        Image(systemName: "slider.horizontal.3")
+                                    }//:BUTTON
+                .sheet(isPresented: $isShowingFilter) {
+                    FilterProductsView()
+                        .onDisappear {
+                            dashboardViewModel.searchAttributes.category = selectedCategory
+                            dashboardViewModel.getListProducts()
+                        }
+                }
+            )
         }
         .onAppear(perform: {
             print("VIEW: DashboardView - onAppear")

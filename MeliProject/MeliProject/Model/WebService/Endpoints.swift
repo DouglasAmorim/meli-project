@@ -14,4 +14,6 @@ class Endpoint {
     static let apiBaseUrl = Endpoint.API_BASE + Endpoint.API_PATH
     
     static let search = apiBaseUrl + "search"
+    
+    static let categories = apiBaseUrl + "categories"
 }

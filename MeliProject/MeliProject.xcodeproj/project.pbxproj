@@ -16,11 +16,14 @@
 		E85C1B712C270DED000D4A41 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B702C270DED000D4A41 /* DashboardViewModel.swift */; };
 		E85C1B732C270EA0000D4A41 /* DataResquestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B722C270EA0000D4A41 /* DataResquestExtension.swift */; };
 		E85C1B752C270EDC000D4A41 /* ErrorCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B742C270EDC000D4A41 /* ErrorCustom.swift */; };
-		E85C1B782C270F51000D4A41 /* ListProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B772C270F51000D4A41 /* ListProductsService.swift */; };
+		E85C1B782C270F51000D4A41 /* ProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B772C270F51000D4A41 /* ProductsService.swift */; };
 		E85C1B7A2C271050000D4A41 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B792C271050000D4A41 /* ProductResponse.swift */; };
 		E85C1B7D2C271AC6000D4A41 /* ProductCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B7C2C271AC6000D4A41 /* ProductCategoryModel.swift */; };
 		E85C1B812C27282E000D4A41 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B802C27282E000D4A41 /* ProductDetailView.swift */; };
 		E85C1B832C273500000D4A41 /* ProductAttributesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B822C273500000D4A41 /* ProductAttributesModel.swift */; };
+		E85C1B872C2742AE000D4A41 /* FilterProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B862C2742AE000D4A41 /* FilterProductsView.swift */; };
+		E85C1B892C2742EC000D4A41 /* FilterProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B882C2742EC000D4A41 /* FilterProductsViewModel.swift */; };
+		E85C1B8B2C27435D000D4A41 /* CategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B8A2C27435D000D4A41 /* CategoryResponse.swift */; };
 		E86058522C26324F0065BFBB /* MeliProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86058512C26324F0065BFBB /* MeliProjectApp.swift */; };
 		E86058542C26324F0065BFBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86058532C26324F0065BFBB /* ContentView.swift */; };
 		E86058562C2632500065BFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86058552C2632500065BFBB /* Assets.xcassets */; };
@@ -64,12 +67,15 @@
 		E85C1B702C270DED000D4A41 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		E85C1B722C270EA0000D4A41 /* DataResquestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResquestExtension.swift; sourceTree = "<group>"; };
 		E85C1B742C270EDC000D4A41 /* ErrorCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCustom.swift; sourceTree = "<group>"; };
-		E85C1B772C270F51000D4A41 /* ListProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductsService.swift; sourceTree = "<group>"; };
+		E85C1B772C270F51000D4A41 /* ProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsService.swift; sourceTree = "<group>"; };
 		E85C1B792C271050000D4A41 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
 		E85C1B7B2C271735000D4A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E85C1B7C2C271AC6000D4A41 /* ProductCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryModel.swift; sourceTree = "<group>"; };
 		E85C1B802C27282E000D4A41 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		E85C1B822C273500000D4A41 /* ProductAttributesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAttributesModel.swift; sourceTree = "<group>"; };
+		E85C1B862C2742AE000D4A41 /* FilterProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProductsView.swift; sourceTree = "<group>"; };
+		E85C1B882C2742EC000D4A41 /* FilterProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProductsViewModel.swift; sourceTree = "<group>"; };
+		E85C1B8A2C27435D000D4A41 /* CategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryResponse.swift; sourceTree = "<group>"; };
 		E860584E2C26324F0065BFBB /* MeliProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeliProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86058512C26324F0065BFBB /* MeliProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliProjectApp.swift; sourceTree = "<group>"; };
 		E86058532C26324F0065BFBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,7 +154,7 @@
 		E85C1B762C270F44000D4A41 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				E85C1B772C270F51000D4A41 /* ListProductsService.swift */,
+				E85C1B772C270F51000D4A41 /* ProductsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 				E85C1B792C271050000D4A41 /* ProductResponse.swift */,
 				E85C1B7C2C271AC6000D4A41 /* ProductCategoryModel.swift */,
 				E85C1B822C273500000D4A41 /* ProductAttributesModel.swift */,
+				E85C1B8A2C27435D000D4A41 /* CategoryResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				E85C1B702C270DED000D4A41 /* DashboardViewModel.swift */,
+				E85C1B882C2742EC000D4A41 /* FilterProductsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 				E85C1B6A2C2708A3000D4A41 /* DashboardView.swift */,
 				E85C1B6E2C270B79000D4A41 /* ProductRowView.swift */,
 				E85C1B802C27282E000D4A41 /* ProductDetailView.swift */,
+				E85C1B862C2742AE000D4A41 /* FilterProductsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -495,13 +504,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E85C1B7A2C271050000D4A41 /* ProductResponse.swift in Sources */,
+				E85C1B892C2742EC000D4A41 /* FilterProductsViewModel.swift in Sources */,
 				E85C1B812C27282E000D4A41 /* ProductDetailView.swift in Sources */,
 				E86058542C26324F0065BFBB /* ContentView.swift in Sources */,
 				E85C1B832C273500000D4A41 /* ProductAttributesModel.swift in Sources */,
 				E85C1B6D2C2708F7000D4A41 /* ProductModel.swift in Sources */,
 				E8CECE302C26371F003B1E7E /* WsRequestInterceptor.swift in Sources */,
-				E85C1B782C270F51000D4A41 /* ListProductsService.swift in Sources */,
+				E85C1B782C270F51000D4A41 /* ProductsService.swift in Sources */,
+				E85C1B8B2C27435D000D4A41 /* CategoryResponse.swift in Sources */,
 				E85C1B732C270EA0000D4A41 /* DataResquestExtension.swift in Sources */,
+				E85C1B872C2742AE000D4A41 /* FilterProductsView.swift in Sources */,
 				E85C1B6F2C270B79000D4A41 /* ProductRowView.swift in Sources */,
 				E85C1B6B2C2708A3000D4A41 /* DashboardView.swift in Sources */,
 				E85C1B7D2C271AC6000D4A41 /* ProductCategoryModel.swift in Sources */,

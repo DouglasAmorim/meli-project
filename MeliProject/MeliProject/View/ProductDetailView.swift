@@ -15,20 +15,20 @@ struct ProductDetailView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .leading, spacing: 20) {
                     
-                    AsyncImage(url: URL(string: product.thumbnail))
+                    AsyncImage(url: URL(string: product.thumbnail ?? ""))
                         .scaledToFit()
                         .frame(alignment: .center)
                     
                     VStack(alignment: .leading, spacing: 24) {
-                        Text("Product: \(product.title)")
+                        Text("Product: \(product.title ?? "")")
                             .font(.largeTitle)
                         
-                        Text("Price: \(product.price) \(product.currency)")
+                        Text("Price: \(product.price ?? 0) \(product.currency ?? "")")
                             .font(.title)
                             .multilineTextAlignment(.leading)
                     }
                 
-                    ForEach(product.attributes) { attribute in
+                    ForEach(product.attributes ?? []) { attribute in
                         VStack(alignment: .leading, spacing: 8) {
                             HStack {
                                 Text(attribute.name ?? " - ")
