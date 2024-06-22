@@ -15,11 +15,20 @@ struct DashboardView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(dashboardViewModel.products) { product in
-                    NavigationLink(destination: ProductDetailView(product: product), label: {
-                        ProductRowView(product: product)
-                            .padding(.vertical, 4)
-                    })
+                switch dashboardViewModel.loadingState {
+                case .FAILURE:
+                    Text("Error: \(self.dashboardViewModel.error?.description ?? " Unknown")")
+                    
+                case .LOADING:
+                    Text("Loading")
+                    
+                case .LOADED:
+                    ForEach(dashboardViewModel.products) { product in
+                        NavigationLink(destination: ProductDetailView(product: product), label: {
+                            ProductRowView(product: product)
+                                .padding(.vertical, 4)
+                        })
+                    }
                 }
             }
             .navigationTitle("Products")
@@ -32,8 +41,14 @@ struct DashboardView: View {
                 .sheet(isPresented: $isShowingFilter) {
                     FilterProductsView()
                         .onDisappear {
-                            dashboardViewModel.searchAttributes.category = selectedCategory
-                            dashboardViewModel.getListProducts()
+                            print("VIEW - ONDISAPPEAR FILTER - selectedCategory")
+                            if dashboardViewModel.searchAttributes.category != selectedCategory {
+                                
+                                print("VIEW - ONDISAPEAR FILTER - Call get list products again")
+                                
+                                dashboardViewModel.searchAttributes.category = selectedCategory
+                                dashboardViewModel.getListProducts()
+                            }
                         }
                 }
             )
