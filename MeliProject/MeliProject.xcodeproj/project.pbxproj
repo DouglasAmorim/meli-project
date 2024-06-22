@@ -10,6 +10,14 @@
 		5C96CE8F7A2EA2C77A59DF8E /* Pods_MeliProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D9FB21F7E5D590F393C74C /* Pods_MeliProject.framework */; };
 		86E34132AAA168161CD2377B /* Pods_MeliProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714DE6BE4EF6329FD0756412 /* Pods_MeliProjectTests.framework */; };
 		B94D72E0CAE876D9ACE2CE11 /* Pods_MeliProject_MeliProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A4EFFC6E5307BB56605EE6 /* Pods_MeliProject_MeliProjectUITests.framework */; };
+		E85C1B6B2C2708A3000D4A41 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B6A2C2708A3000D4A41 /* DashboardView.swift */; };
+		E85C1B6D2C2708F7000D4A41 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B6C2C2708F7000D4A41 /* ProductModel.swift */; };
+		E85C1B6F2C270B79000D4A41 /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B6E2C270B79000D4A41 /* ProductRowView.swift */; };
+		E85C1B712C270DED000D4A41 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B702C270DED000D4A41 /* DashboardViewModel.swift */; };
+		E85C1B732C270EA0000D4A41 /* DataResquestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B722C270EA0000D4A41 /* DataResquestExtension.swift */; };
+		E85C1B752C270EDC000D4A41 /* ErrorCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B742C270EDC000D4A41 /* ErrorCustom.swift */; };
+		E85C1B782C270F51000D4A41 /* ListProductsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B772C270F51000D4A41 /* ListProductsService.swift */; };
+		E85C1B7A2C271050000D4A41 /* ProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B792C271050000D4A41 /* ProductResponse.swift */; };
 		E86058522C26324F0065BFBB /* MeliProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86058512C26324F0065BFBB /* MeliProjectApp.swift */; };
 		E86058542C26324F0065BFBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86058532C26324F0065BFBB /* ContentView.swift */; };
 		E86058562C2632500065BFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86058552C2632500065BFBB /* Assets.xcassets */; };
@@ -47,6 +55,14 @@
 		C6E45E9C5F855DFE83456E1D /* Pods-MeliProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeliProjectTests.release.xcconfig"; path = "Target Support Files/Pods-MeliProjectTests/Pods-MeliProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		E6D9FB21F7E5D590F393C74C /* Pods_MeliProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeliProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74C22ECAD32BE5CC10E949C /* Pods-MeliProject-MeliProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeliProject-MeliProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-MeliProject-MeliProjectUITests/Pods-MeliProject-MeliProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E85C1B6A2C2708A3000D4A41 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		E85C1B6C2C2708F7000D4A41 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		E85C1B6E2C270B79000D4A41 /* ProductRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
+		E85C1B702C270DED000D4A41 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		E85C1B722C270EA0000D4A41 /* DataResquestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResquestExtension.swift; sourceTree = "<group>"; };
+		E85C1B742C270EDC000D4A41 /* ErrorCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCustom.swift; sourceTree = "<group>"; };
+		E85C1B772C270F51000D4A41 /* ListProductsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductsService.swift; sourceTree = "<group>"; };
+		E85C1B792C271050000D4A41 /* ProductResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductResponse.swift; sourceTree = "<group>"; };
 		E860584E2C26324F0065BFBB /* MeliProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeliProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86058512C26324F0065BFBB /* MeliProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliProjectApp.swift; sourceTree = "<group>"; };
 		E86058532C26324F0065BFBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +129,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E85C1B672C270834000D4A41 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E86058512C26324F0065BFBB /* MeliProjectApp.swift */,
+				E86058532C26324F0065BFBB /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E85C1B762C270F44000D4A41 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E85C1B772C270F51000D4A41 /* ListProductsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E86058452C26324F0065BFBB = {
 			isa = PBXGroup;
 			children = (
@@ -138,11 +171,10 @@
 		E86058502C26324F0065BFBB /* MeliProject */ = {
 			isa = PBXGroup;
 			children = (
+				E85C1B672C270834000D4A41 /* App */,
 				E860587D2C2632860065BFBB /* View */,
 				E860587C2C26327B0065BFBB /* ViewModel */,
 				E860587B2C2632720065BFBB /* Model */,
-				E86058512C26324F0065BFBB /* MeliProjectApp.swift */,
-				E86058532C26324F0065BFBB /* ContentView.swift */,
 				E86058552C2632500065BFBB /* Assets.xcassets */,
 				E86058572C2632500065BFBB /* Preview Content */,
 			);
@@ -178,6 +210,9 @@
 			isa = PBXGroup;
 			children = (
 				E8CECE2E2C26363F003B1E7E /* WebService */,
+				E85C1B6C2C2708F7000D4A41 /* ProductModel.swift */,
+				E85C1B742C270EDC000D4A41 /* ErrorCustom.swift */,
+				E85C1B792C271050000D4A41 /* ProductResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +220,7 @@
 		E860587C2C26327B0065BFBB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E85C1B702C270DED000D4A41 /* DashboardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,6 +228,8 @@
 		E860587D2C2632860065BFBB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E85C1B6A2C2708A3000D4A41 /* DashboardView.swift */,
+				E85C1B6E2C270B79000D4A41 /* ProductRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,8 +237,10 @@
 		E8CECE2E2C26363F003B1E7E /* WebService */ = {
 			isa = PBXGroup;
 			children = (
+				E85C1B762C270F44000D4A41 /* Services */,
 				E8CECE2F2C26371F003B1E7E /* WsRequestInterceptor.swift */,
 				E8CECE332C263959003B1E7E /* Endpoints.swift */,
+				E85C1B722C270EA0000D4A41 /* DataResquestExtension.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -443,10 +483,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85C1B7A2C271050000D4A41 /* ProductResponse.swift in Sources */,
 				E86058542C26324F0065BFBB /* ContentView.swift in Sources */,
+				E85C1B6D2C2708F7000D4A41 /* ProductModel.swift in Sources */,
 				E8CECE302C26371F003B1E7E /* WsRequestInterceptor.swift in Sources */,
+				E85C1B782C270F51000D4A41 /* ListProductsService.swift in Sources */,
+				E85C1B732C270EA0000D4A41 /* DataResquestExtension.swift in Sources */,
+				E85C1B6F2C270B79000D4A41 /* ProductRowView.swift in Sources */,
+				E85C1B6B2C2708A3000D4A41 /* DashboardView.swift in Sources */,
 				E8CECE342C263959003B1E7E /* Endpoints.swift in Sources */,
 				E86058522C26324F0065BFBB /* MeliProjectApp.swift in Sources */,
+				E85C1B712C270DED000D4A41 /* DashboardViewModel.swift in Sources */,
+				E85C1B752C270EDC000D4A41 /* ErrorCustom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
