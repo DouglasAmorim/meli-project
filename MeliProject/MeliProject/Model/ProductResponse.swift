@@ -11,7 +11,7 @@ class ProductResponse: Codable, Equatable, Identifiable {
     var result: [ProductModel] = []
     
     private enum CodingKeys: String, CodingKey {
-        case result
+        case result = "results"
     }
         
     static func == (lhs: ProductResponse, rhs: ProductResponse) -> Bool {

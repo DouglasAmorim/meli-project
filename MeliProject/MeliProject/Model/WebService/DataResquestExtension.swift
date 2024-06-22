@@ -18,14 +18,17 @@ extension DataRequest {
                 return
             }
             
+            print("DATAREQUEST - response status code \(statusCode)")
+            
             switch statusCode {
             case 200 ... 299:
+                
                 switch dataResponse.result {
                 case .success(let data):
                     completion(.success(data))
                     
                 case .failure(let error):
-                    
+                    print("DATAREQUEST - response error \(statusCode) \(error.localizedDescription)")
                     let errorCustom = ErrorCustom(message: error.errorDescription, code: error.responseCode ?? 0, description: error.localizedDescription)
                     
                     completion(.failure(errorCustom))
@@ -33,6 +36,7 @@ extension DataRequest {
                 
             default:
                 // TODO: Decodificar erro
+                print("DATAREQUEST - response error \(statusCode)")
                 let errorCustom = ErrorCustom(message: "Exception:", code: 0, description: "Description")
                 
                 completion(.failure(errorCustom))

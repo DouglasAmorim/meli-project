@@ -8,18 +8,24 @@
 import SwiftUI
 
 struct DashboardView: View {
-    
-    var products: [ProductModel] = []
+    @ObservedObject var dashboardViewModel = DashboardViewModel(listProductsService: ListProductsService())
     
     var body: some View {
-        List {
-            ForEach(products.shuffled()) { product in
-                NavigationLink(destination: ContentView(), label: {
-                    ProductRowView(product: product)
-                        .padding(.vertical, 4)
-                })
+        NavigationView {
+            List {
+                ForEach(dashboardViewModel.products) { product in
+                    NavigationLink(destination: ContentView(), label: {
+                        ProductRowView(product: product)
+                            .padding(.vertical, 4)
+                    })
+                }
             }
+            .navigationTitle("Products")
         }
+        .onAppear(perform: {
+            print("VIEW: DashboardView - onAppear")
+            dashboardViewModel.getListProducts()
+        })
     }
 }
 
