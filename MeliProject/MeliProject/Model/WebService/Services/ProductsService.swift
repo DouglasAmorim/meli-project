@@ -9,9 +9,14 @@ import Foundation
 import Alamofire
 
 class ProductsService {
+    private var session: Session
+    
+    init(session: Session = WsRequestInterceptor.shared.manager) {
+        self.session = session
+    }
+    
     func getCategories(_ result: @escaping (Result<[CategoryResponse], ErrorCustom>) -> Void) {
-        
-        WsRequestInterceptor.shared.manager.request(Endpoint.categories, method: .get, parameters: nil, encoding: URLEncoding.default)
+        session.request(Endpoint.categories, method: .get, parameters: nil, encoding: URLEncoding.default)
             .validate()
             .handleResponse { response in
                 switch response {

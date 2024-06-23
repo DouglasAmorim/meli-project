@@ -32,6 +32,7 @@
 		E86058632C2632500065BFBB /* MeliProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86058622C2632500065BFBB /* MeliProjectTests.swift */; };
 		E860586D2C2632500065BFBB /* MeliProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860586C2C2632500065BFBB /* MeliProjectUITests.swift */; };
 		E860586F2C2632500065BFBB /* MeliProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860586E2C2632500065BFBB /* MeliProjectUITestsLaunchTests.swift */; };
+		E88174B02C27B1A00013D3D9 /* ProductServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88174AF2C27B1A00013D3D9 /* ProductServiceTests.swift */; };
 		E8CECE302C26371F003B1E7E /* WsRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CECE2F2C26371F003B1E7E /* WsRequestInterceptor.swift */; };
 		E8CECE342C263959003B1E7E /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CECE332C263959003B1E7E /* Endpoints.swift */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,7 @@
 		E86058682C2632500065BFBB /* MeliProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeliProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E860586C2C2632500065BFBB /* MeliProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliProjectUITests.swift; sourceTree = "<group>"; };
 		E860586E2C2632500065BFBB /* MeliProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E88174AF2C27B1A00013D3D9 /* ProductServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceTests.swift; sourceTree = "<group>"; };
 		E8CECE2F2C26371F003B1E7E /* WsRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WsRequestInterceptor.swift; sourceTree = "<group>"; };
 		E8CECE332C263959003B1E7E /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		FB3AE69C7FE7A6FBCB0C0F7B /* Pods-MeliProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeliProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-MeliProjectTests/Pods-MeliProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				E86058622C2632500065BFBB /* MeliProjectTests.swift */,
+				E88174AF2C27B1A00013D3D9 /* ProductServiceTests.swift */,
 			);
 			path = MeliProjectTests;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E86058632C2632500065BFBB /* MeliProjectTests.swift in Sources */,
+				E88174B02C27B1A00013D3D9 /* ProductServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
