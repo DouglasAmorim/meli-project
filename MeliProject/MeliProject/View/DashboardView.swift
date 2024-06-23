@@ -10,8 +10,9 @@ import SwiftUI
 struct DashboardView: View {
     @ObservedObject var dashboardViewModel = DashboardViewModel(listProductsService: ProductsService())
     @State private var isShowingFilter: Bool = false
+    @State private var searchInput: String = ""
     @AppStorage("selectedCategory") var selectedCategory: String = "MLA1055"
-    @State var searchInput: String = ""
+    
     
     var body: some View {
         NavigationView {
@@ -23,7 +24,7 @@ struct DashboardView: View {
                     
                     TextField("Search", text: $searchInput)
                         .onSubmit {
-                            print("submit \(searchInput)")
+                            print("VIEW - submit search: \(searchInput)")
                             self.dashboardViewModel.searchAttributes.search = searchInput
                             self.dashboardViewModel.getListProducts()
                         }
@@ -75,6 +76,7 @@ struct DashboardView: View {
         }
         .onAppear(perform: {
             print("VIEW: DashboardView - onAppear")
+            self.dashboardViewModel.searchAttributes.category = self.selectedCategory
             dashboardViewModel.getListProducts()
         })
     }
