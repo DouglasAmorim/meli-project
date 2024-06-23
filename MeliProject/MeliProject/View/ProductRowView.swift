@@ -17,7 +17,7 @@ struct ProductRowView: View {
                     .font(.title2)
                     .fontWeight(.bold)
                 
-                Text("Preço \(String(product.price ?? 0)) \(product.currency ?? "")")
+                Text("Price \(String(format: "%.2f", product.price ?? 0.0)) \(product.currency ?? "")")
                     .font(.caption)
                     .foregroundColor(Color.secondary)
             }

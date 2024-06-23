@@ -35,7 +35,7 @@ struct ProductDetailView: View {
                         Text("Product: \(product.title ?? "")")
                             .font(.largeTitle)
                         
-                        Text("Price: \(product.price ?? 0) \(product.currency ?? "")")
+                        Text("Price: \(String(format: "%.2f", product.price ?? 0)) \(product.currency ?? "")")
                             .font(.title)
                             .multilineTextAlignment(.leading)
                     }
