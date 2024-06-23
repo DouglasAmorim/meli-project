@@ -52,7 +52,7 @@ class ProductsService {
             let parameterData = try JSONEncoder().encode(productQueryStringModel)
             let parameter = try JSONSerialization.jsonObject(with: parameterData, options: []) as? [String: AnyObject]
             
-            WsRequestInterceptor.shared.manager.request(Endpoint.search, method: .get, parameters: parameter, encoding: URLEncoding.default)
+            session.request(Endpoint.search, method: .get, parameters: parameter, encoding: URLEncoding.default)
                 .validate()
                 .handleResponse { response in
                     switch response {
