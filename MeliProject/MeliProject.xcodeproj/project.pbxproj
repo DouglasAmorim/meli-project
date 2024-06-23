@@ -33,6 +33,9 @@
 		E860586D2C2632500065BFBB /* MeliProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860586C2C2632500065BFBB /* MeliProjectUITests.swift */; };
 		E860586F2C2632500065BFBB /* MeliProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E860586E2C2632500065BFBB /* MeliProjectUITestsLaunchTests.swift */; };
 		E88174B02C27B1A00013D3D9 /* ProductServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88174AF2C27B1A00013D3D9 /* ProductServiceTests.swift */; };
+		E88174B22C27BE2D0013D3D9 /* DashboardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88174B12C27BE2D0013D3D9 /* DashboardViewModelTests.swift */; };
+		E88174B42C27BED80013D3D9 /* MockProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88174B32C27BED80013D3D9 /* MockProductService.swift */; };
+		E88174B62C27C4930013D3D9 /* FilterProductsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88174B52C27C4930013D3D9 /* FilterProductsViewModelTests.swift */; };
 		E8CECE302C26371F003B1E7E /* WsRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CECE2F2C26371F003B1E7E /* WsRequestInterceptor.swift */; };
 		E8CECE342C263959003B1E7E /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CECE332C263959003B1E7E /* Endpoints.swift */; };
 /* End PBXBuildFile section */
@@ -90,6 +93,9 @@
 		E860586C2C2632500065BFBB /* MeliProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliProjectUITests.swift; sourceTree = "<group>"; };
 		E860586E2C2632500065BFBB /* MeliProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E88174AF2C27B1A00013D3D9 /* ProductServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductServiceTests.swift; sourceTree = "<group>"; };
+		E88174B12C27BE2D0013D3D9 /* DashboardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModelTests.swift; sourceTree = "<group>"; };
+		E88174B32C27BED80013D3D9 /* MockProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductService.swift; sourceTree = "<group>"; };
+		E88174B52C27C4930013D3D9 /* FilterProductsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProductsViewModelTests.swift; sourceTree = "<group>"; };
 		E8CECE2F2C26371F003B1E7E /* WsRequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WsRequestInterceptor.swift; sourceTree = "<group>"; };
 		E8CECE332C263959003B1E7E /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		FB3AE69C7FE7A6FBCB0C0F7B /* Pods-MeliProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeliProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-MeliProjectTests/Pods-MeliProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				E85C1B772C270F51000D4A41 /* ProductsService.swift */,
+				E88174B32C27BED80013D3D9 /* MockProductService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -221,6 +228,8 @@
 			children = (
 				E86058622C2632500065BFBB /* MeliProjectTests.swift */,
 				E88174AF2C27B1A00013D3D9 /* ProductServiceTests.swift */,
+				E88174B12C27BE2D0013D3D9 /* DashboardViewModelTests.swift */,
+				E88174B52C27C4930013D3D9 /* FilterProductsViewModelTests.swift */,
 			);
 			path = MeliProjectTests;
 			sourceTree = "<group>";
@@ -532,6 +541,7 @@
 				E85C1B6B2C2708A3000D4A41 /* DashboardView.swift in Sources */,
 				E85C1B7D2C271AC6000D4A41 /* ProductCategoryModel.swift in Sources */,
 				E8CECE342C263959003B1E7E /* Endpoints.swift in Sources */,
+				E88174B42C27BED80013D3D9 /* MockProductService.swift in Sources */,
 				E86058522C26324F0065BFBB /* MeliProjectApp.swift in Sources */,
 				E85C1B712C270DED000D4A41 /* DashboardViewModel.swift in Sources */,
 				E85C1B752C270EDC000D4A41 /* ErrorCustom.swift in Sources */,
@@ -543,7 +553,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88174B22C27BE2D0013D3D9 /* DashboardViewModelTests.swift in Sources */,
 				E86058632C2632500065BFBB /* MeliProjectTests.swift in Sources */,
+				E88174B62C27C4930013D3D9 /* FilterProductsViewModelTests.swift in Sources */,
 				E88174B02C27B1A00013D3D9 /* ProductServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
