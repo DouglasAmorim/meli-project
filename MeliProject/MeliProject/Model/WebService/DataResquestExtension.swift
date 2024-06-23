@@ -8,6 +8,10 @@
 import Foundation
 import Alamofire
 
+/*
+Extension of DataRequest
+ implements a method which handles the api responses to the service
+ */
 extension DataRequest {
     public func handleResponse(_ completion: @escaping (Result<Data, Error>) -> Void) -> Self {
         return responseData { dataResponse in
@@ -36,7 +40,7 @@ extension DataRequest {
                 }
                 
             default:
-                // TODO: Decodificar erro
+                // TODO: Decode Error
                 print("DATAREQUEST - response error \(statusCode)")
                 let errorCustom = ErrorCustom(message: "Exception:", code: 0, description: "Description")
                 

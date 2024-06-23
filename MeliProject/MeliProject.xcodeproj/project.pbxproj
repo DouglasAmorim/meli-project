@@ -26,7 +26,6 @@
 		E85C1B8B2C27435D000D4A41 /* CategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B8A2C27435D000D4A41 /* CategoryResponse.swift */; };
 		E85C1B8E2C275A7F000D4A41 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85C1B8D2C275A7F000D4A41 /* ColorExtension.swift */; };
 		E86058522C26324F0065BFBB /* MeliProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86058512C26324F0065BFBB /* MeliProjectApp.swift */; };
-		E86058542C26324F0065BFBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86058532C26324F0065BFBB /* ContentView.swift */; };
 		E86058562C2632500065BFBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86058552C2632500065BFBB /* Assets.xcassets */; };
 		E86058592C2632500065BFBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E86058582C2632500065BFBB /* Preview Assets.xcassets */; };
 		E86058632C2632500065BFBB /* MeliProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86058622C2632500065BFBB /* MeliProjectTests.swift */; };
@@ -84,7 +83,6 @@
 		E85C1B8D2C275A7F000D4A41 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		E860584E2C26324F0065BFBB /* MeliProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeliProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E86058512C26324F0065BFBB /* MeliProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeliProjectApp.swift; sourceTree = "<group>"; };
-		E86058532C26324F0065BFBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E86058552C2632500065BFBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E86058582C2632500065BFBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E860585E2C2632500065BFBB /* MeliProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeliProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				E86058512C26324F0065BFBB /* MeliProjectApp.swift */,
-				E86058532C26324F0065BFBB /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -529,7 +526,6 @@
 				E85C1B7A2C271050000D4A41 /* ProductResponse.swift in Sources */,
 				E85C1B892C2742EC000D4A41 /* FilterProductsViewModel.swift in Sources */,
 				E85C1B812C27282E000D4A41 /* ProductDetailView.swift in Sources */,
-				E86058542C26324F0065BFBB /* ContentView.swift in Sources */,
 				E85C1B832C273500000D4A41 /* ProductAttributesModel.swift in Sources */,
 				E85C1B6D2C2708F7000D4A41 /* ProductModel.swift in Sources */,
 				E8CECE302C26371F003B1E7E /* WsRequestInterceptor.swift in Sources */,
